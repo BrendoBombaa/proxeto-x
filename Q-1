@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+ class Main {
+
+			public static void main(String[] args) {
+				// TODO Auto-generated method stub
+				Scanner sc = new Scanner(System.in);
+				
+				System.out.println("Base:");
+				int largura = sc.nextInt();
+				System.out.println("Altura:");
+				int comprimento = sc.nextInt();
+				sc.close();
+				int perimetro = (largura *2 + comprimento*2);
+				int Area = (largura * comprimento);
+							
+				System.out.println("Area: " + Area);
+				System.out.println("Perimetro: " + perimetro);
+			}
+
+		}
+
