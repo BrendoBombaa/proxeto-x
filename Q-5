@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+class Main {
+
+	public static double somar (double num1, double num2) {
+		return (num1+num2);
+	}
+	
+	public static double subtrair (double num1, double num2) {
+		return (num1-num2);
+	}
+	
+	public static double multiplicar (double num1, double num2) {
+		return (num1*num2);
+	}
+	
+	public static double dividir (double num1, double num2) {
+		return (num1/num2);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		//System.out.println("1: Soma ");
+		//System.out.println("2: Subtracao ");
+		//System.out.println("3: Multiplicacao ");
+		//System.out.println("4: Divisao ");
+		System.out.println("Informe a operacao: ");
+		int opcao = sc.nextInt();
+		System.out.println("Informe o primeiro numero: ");
+		Double num1 = sc.nextDouble();
+		System.out.println("Informe o segundo numero: ");
+		Double num2 = sc.nextDouble();
+		
+		sc.close();
+		
+		switch (opcao) {
+		case 1: 
+			double Soma = somar (num1, num2);
+			System.out.println("1: Soma " );
+			System.out.println(Soma );
+			break;
+		case 2: 
+			double Subtracao = subtrair (num1, num2);
+			System.out.println("2: Subtracao "  );
+			System.out.println(Subtracao );
+			break;
+		case 3: 
+			double Multiplicacao = multiplicar (num1, num2);
+			System.out.println("3: Multiplicacao " );
+			System.out.println(Multiplicacao );
+			break;
+		case 4: 
+			double Divisao = dividir (num1, num2);
+			System.out.println ("4: Divisao " );
+			System.out.println (Divisao);
+			break;
+			default:
+			System.out.println ("Opcao invalida!");
+		
+		}
+		
+		
+	}
+
+}
