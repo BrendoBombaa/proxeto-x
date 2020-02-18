@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+ class Main {
+
+	 public static double IMC (double peso, double altura) {
+			return (peso / (altura*altura));
+	 }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Informe o peso: ");
+		double P = sc.nextDouble();
+		System.out.println("Informe a altura: ");
+		double A = sc.nextDouble();
+		
+		
+		double valor = IMC ( P, A );
+		
+	
+		if (valor <= 18.5) {
+			System.out.println("IMC = " + valor + ", Abaixo do peso");
+			return;
+		} 
+		else if (valor > 18.5 & valor <= 25) {
+			System.out.println("IMC = " + valor + ", Peso normal ");
+			return;
+		}	
+		else if (valor > 25 & valor <= 30) {
+			System.out.println("IMC = " + valor + ", Acima do peso");
+			return;
+		       }
+		else if (valor > 30) {
+		    System.out.println("IMC = " + valor + ", Obeso");
+			return;
+			}
+		    	   
+		}
+		
+		
+	
+
+	
+	}
+ 
