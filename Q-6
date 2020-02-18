@@ -21,10 +21,10 @@ class Main {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("1: Soma ");
-		System.out.println("2: Subtracao ");
-		System.out.println("3: Multiplicacao ");
-		System.out.println("4: Divisao ");
+		//System.out.println("1: Soma ");
+		//System.out.println("2: Subtracao ");
+		//System.out.println("3: Multiplicacao ");
+		//System.out.println("4: Divisao ");
 		System.out.println("Informe a operacao: ");
 		int opcao = sc.nextInt();
 		System.out.println("Informe o primeiro numero: ");
@@ -37,20 +37,26 @@ class Main {
 		switch (opcao) {
 		case 1: 
 			double Soma = somar (num1, num2);
-			System.out.println("Soma: " + Soma );
+			System.out.println("1: Soma " );
+			System.out.println(Soma );
 			break;
 		case 2: 
 			double Subtracao = subtrair (num1, num2);
-			System.out.println("Subtracao: " + Subtracao );
+			System.out.println("2: Subtracao "  );
+			System.out.println(Subtracao );
 			break;
 		case 3: 
 			double Multiplicacao = multiplicar (num1, num2);
-			System.out.println("Multiplicacao: " + Multiplicacao );
+			System.out.println("3: Multiplicacao " );
+			System.out.println(Multiplicacao );
 			break;
 		case 4: 
 			double Divisao = dividir (num1, num2);
-			System.out.println ("Divisao: " + Divisao);
+			System.out.println ("4: Divisao " );
+			System.out.println (Divisao);
 			break;
+			default:
+			System.out.println ("Opcao invalida!");
 		
 		}
 		
@@ -58,5 +64,3 @@ class Main {
 	}
 
 }
-
-
