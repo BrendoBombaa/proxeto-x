@@ -10,7 +10,7 @@ import java.util.Scanner;
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Informe o numero de identificacao do aluno:  ");
-		double i = sc.nextDouble();
+		int i = sc.nextInt();
 		
 		System.out.println("Informe a nota 1: ");
 		double nota1 = sc.nextDouble();
@@ -29,23 +29,24 @@ import java.util.Scanner;
 		
 	
 		if (MA >= 90 ) {
-			System.out.println("MA = " + MA + ", A ,Aprovado ");
+			System.out.println("Aluno: " + i + ", Media Aproveitamento = " + MA + ", Conceito: A, Aprovado");
 		} 
 		else if (MA >= 75) {
-			System.out.println("MA = " + MA + ", B ,Aprovado ");
+			System.out.println("Aluno: " + i + ", Media Aproveitamento = " + MA + ", Conceito: B, Aprovado");
 		}	
 		else if (MA >= 60) {
-			System.out.println("MA = " + MA + ", C ,Aprovado ");       
+			System.out.println("Aluno: " + i + ", Media Aproveitamento = " + MA + ", Conceito: C, Aprovado");      
 		}
 		else if (MA >= 40   ) {
-		    System.out.println("MA = " + MA + ", D ,Reprovado");
+			System.out.println("Aluno: " + i + ", Media Aproveitamento = " + MA + ", Conceito: D, Reprovado");
 		}
 		else if (MA < 40) {	
-			System.out.println("MA = " + MA + ", E ,Reprovado");
+			System.out.println("Aluno: " + i + ", Media Aproveitamento = " + MA + ", Conceito: E, Reprovado");
 		}
 		   	   
 	}
 		
 			
 }
- 
+		
+			
